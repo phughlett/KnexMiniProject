@@ -3,13 +3,13 @@
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "knex": "^1.0.3",
+    "knex-csv-seeder": "^0.4.1",
     "morgan": "^1.10.0",
     "pg": "^8.7.3"
   },
   "name": "knexminiproject",
   "version": "1.0.0",
   "main": "knexfile.js",
-  "devDependencies": {},
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"

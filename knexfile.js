@@ -7,7 +7,7 @@ module.exports = {
 
   development: {
     client: 'postgresql',
-    connection: process.env.CONNECTION_STRING,
+    connection: 'postgres://postgres:docker@localhost:5432/cfa_passing_2018',
   },
 
   staging: {

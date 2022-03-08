@@ -7,21 +7,22 @@ exports.up = function(knex) {
         table.increments('id');
         table.string('Player').notNullable();
         table.string('Team').notNullable();
-        table.integer('Att');
-        table.integer('Cmp')
-        table.integer('Pct')
-        table.integer('Yds')
-        table.integer('YPA')
-        table.integer('TD')
-        table.integer('TD%')
-        table.integer('Int')
-        table.integer('Int%')
-        table.integer('Att')
-        table.integer('Att')
+        table.string('Att');
+        table.string('Cmp');
+        table.string('Pct');
+        table.string('Yds');
+        table.string('YPA');
+        table.string('TD');
+        table.string('TD_percentage');
+        table.string('Int');
+        table.string('Int_percent');
+        table.string('Lg');
+        table.string('Sack');
+        table.string('Loss');
+        table.string('Rate');
+        table.string('Stat Type');
+        })
 
-
-    })
-    Player,Team,Att,Cmp,Pct,Yds,YPA,TD,TD%,Int,Int%,Lg,Sack,Loss,Rate,"Stat Type"
 };
 
 /**
