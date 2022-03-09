@@ -88,20 +88,35 @@ Returns JSON object containing all rushing records.
 ```/passing```
 Returns JSON object containing all passing records.
 
-
-
 ```/rushing/playerId```
 Returns JSON object containing a single rushing record of a specific player based on ID.
 
 ```/passing/playerId```
 Returns JSON object containing a single passing record of a specific player based on ID.
 
-
 ### PATCH
+
+```/passing/playerId```
+Updates a passing record which matches playerid with new information.  Information must match object key's as seen in the Sample Passing Data.
+
+```/rushing/playerId```
+Updates a rushing record which matches playerid with new information.  Information must match object key's as seen in the Sample Rushing Data.
 
 ### POST
 
+```/passing```
+Adds a new record.  At a minimum the record must contain a Player and the Team.
+
+```/rushing```
+Adds a new record.  At a minimum the record must contain a Player and the Team.
+
 ### DELETE
+
+```/passing/playerId```
+Deletes the record of the indicated Id.
+
+```/rushing/playerId```
+Deletes the record of the indicated Id.
 
 ## Sample Data
 See below 2 examples of passing and rushing objects.
