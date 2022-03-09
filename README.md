@@ -2,13 +2,13 @@
 
 ## Table of Contents
 
-[1. Folder Structure](#Folder)
+[1. Folder Structure](##Folder-Structure)
 
-[2. Installation](#installation)
+[2. Installation](##Installation-Instructions)
 
-[3. API Directions](#API)
+[3. API Directions](##API-Instructions)
 
-[4. Sample Data](#Sample)
+[4. Sample Data](#sample-data)
 
 ## Folder Structure
 
@@ -86,7 +86,7 @@ You can do this all through WSL. No need to switch to Powershell.
 ```\c <db-name>```
 
 
-## API Instrucations
+## API Instructions
 
 ### GET
 There are two different get options.  All data OR a specific record.
