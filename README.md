@@ -8,7 +8,7 @@
 
 [3. API Directions](##API-Instructions)
 
-[4. Sample Data](#sample-data)
+[4. Sample Data](##sample-data)
 
 ## Folder Structure
 
