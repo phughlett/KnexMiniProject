@@ -88,11 +88,56 @@ Returns JSON object containing all rushing records.
 ```/passing```
 Returns JSON object containing all passing records.
 
+```
+{
+  "id":1,
+  "Player":"Gardner Minshew",
+  "Team":"WSU",
+  "Att":"662",
+  "Cmp":"468",
+  "Pct":"70.7",
+  "Yds":"4776",
+  "YPA":"7.2",
+  "TD":"38",
+  "TD_percentage":"5.7",
+  "Int":"9",
+  "Int_percent":"1.4",
+  "Lg":"89t",
+  "Sack":"13",
+  "Loss":"75",
+  "Rate":"147.5",
+  "Stat Type":"Passing"
+
+}
+```
+
 ```/rushing/playerId```
 Returns JSON object containing a single rushing record of a specific player based on ID.
 
 ```/passing/playerId```
 Returns JSON object containing a single passing record of a specific player based on ID.
+```
+{
+  "id":1,
+  "Player":"Gardner Minshew",
+  "Team":"WSU",
+  "Att":"662",
+  "Cmp":"468",
+  "Pct":"70.7",
+  "Yds":"4776",
+  "YPA":"7.2",
+  "TD":"38",
+  "TD_percentage":"5.7",
+  "Int":"9",
+  "Int_percent":"1.4",
+  "Lg":"89t",
+  "Sack":"13",
+  "Loss":"75",
+  "Rate":"147.5",
+  "Stat Type":"Passing"
+
+}
+```
 
 ### PATCH
 
