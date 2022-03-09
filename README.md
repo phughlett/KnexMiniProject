@@ -1,5 +1,14 @@
-##Knex Mini Project
-words...
+# Knex Mini Project
+
+## Table of Contents
+
+[1. Folder Structure](#Folder)
+
+[2. Installation](#installation)
+
+[3. API Directions](#API)
+
+[4. Sample Data](#Sample)
 
 ## Folder Structure
 
