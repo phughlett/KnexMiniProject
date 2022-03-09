@@ -5,7 +5,7 @@
 
  var fs = require("fs");
 
- const SEED_PATH = 'database/passing.csv';
+ const SEED_PATH = 'seeds/passing.csv';
 
 exports.seed = async function(knex) {
   // Deletes ALL existing entries
@@ -19,28 +19,24 @@ exports.seed = async function(knex) {
 
 function fileReader(inputFileName){
   // use the below methods in your code (you will need to change the passed in parameters)
-
   //Reads an input file and returns the contents as a string
   let fileRead = fs.readFileSync(inputFileName) + '';
   let lines = fileRead.split(/\r?\n/);
 
-  let header = lines[0]; //Player,Team,Att,Gain,Loss,Yds,Avg,Lg,TD,"Stat Type"
+  let header = lines[0]; // Player,Team,Att,Cmp,Pct,Yds,YPA,TD,TD%,Int,Int%,Lg,Sack,Loss,Rate,Stat Type
   header = header.split(',');
- // Player,Team,Att,Cmp,Pct,Yds,YPA,TD,TD%,Int,Int%,Lg,Sack,Loss,Rate,Stat Type
+
 
   var arrayObj = [];
-
-
-
 
   for(var i = 1; i < lines.length-1; ++i){
 
     let obj = {};
     let currLine = lines[i];
     currLine = currLine.split(',')
-    console.log('Adding: ', currLine);
-    // Player,Team,Att,Cmp,Pct,Yds,YPA,TD,TD%,Int,Int%,Lg,Sack,Loss,Rate,Stat Type
-    obj.id = i;//id
+    // console.log('Adding: ', currLine);
+
+    
     obj[header[0]] = currLine[0]//player
     obj[header[1]] = currLine[1]//Team
     obj[header[2]] = currLine[2]//Att
@@ -59,10 +55,6 @@ function fileReader(inputFileName){
     obj[header[15]] = currLine[15]//Stat Type
 
     arrayObj.push(obj);
-
-
-
-
   }
   console.log("Array Obj: ", arrayObj)
 

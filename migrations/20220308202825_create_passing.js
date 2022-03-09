@@ -4,7 +4,7 @@
  */
 exports.up = function(knex) {
     return knex.schema.createTable("passing", (table) => {
-        table.increments('id');
+        table.increments('id').primary();
         table.string('Player').notNullable();
         table.string('Team').notNullable();
         table.string('Att');

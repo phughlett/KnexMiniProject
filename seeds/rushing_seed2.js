@@ -5,7 +5,7 @@
 
  var fs = require("fs");
 
- const SEED_PATH = 'database/rushing.csv';
+ const SEED_PATH = 'seeds/rushing.csv';
 
 exports.seed = async function(knex) {
   // Deletes ALL existing entries
@@ -27,19 +27,16 @@ function fileReader(inputFileName){
   let header = lines[0]; //Player,Team,Att,Gain,Loss,Yds,Avg,Lg,TD,"Stat Type"
   header = header.split(',');
 
-  var arrayObj = [];
-
-
-//("Att", "Avg", "Gain", "Lg", "Loss", "Player", "Stat_Type", "TD", "Team", "Yds", "id")
+  var arrayObj = [];//Empty Array to store objects
 
   for(var i = 1; i < lines.length-1; ++i){
 
     let obj = {};
     let currLine = lines[i];
     currLine = currLine.split(',')
-    console.log('Adding: ', currLine);
+    // console.log('Adding: ', currLine);
 
-    obj.id = i;//id
+    
     obj[header[0]] = currLine[0]//player
     obj[header[1]] = currLine[1]//Team
     obj[header[2]] = currLine[2]//Att
@@ -52,10 +49,6 @@ function fileReader(inputFileName){
     obj[header[9]] = currLine[9]//Stat type
 
     arrayObj.push(obj);
-
-
-
-
   }
   console.log("Array Obj: ", arrayObj)
 
